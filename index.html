@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind and DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family:'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="max-w-screen-xl mx-auto p-8 lg:p-14">
+        <!-- Navbar -->
+        <div class="navbar bg-[#F85559] rounded-full text-white lg:py-5">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>About Us</a>
+                  </li>
+                  <li><a>Blog</a></li>
+                  <li><a>Services</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl">
+                <img class="w-8" src="./img/logo.png" alt="">
+                <h2 class=" ">Fruit Burst</h2>
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                  <a>About Us</a>
+                </li>
+                <li><a>Blog</a></li>
+                <li><a>Services</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+                <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full"/>
+            </div>
+          </div>
+          <!-- Banner section -->
+         <div class="hero min-h-screen mt-12" style="background-image: url('img/banner1.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559] text-white border-none outline-none">Shop Now</button>
+              </div>
+            </div>
+          </div> 
+          <!-- Banner-bottom -->
+      <div class="hidden lg:visible lg:flex lg:justify-between lg:w-10/12 lg:m-auto bg-[#FFF] -top-16 relative p-4 rounded-lg">
+            <img src="./img/fruit1.png" alt="">
+            <img src="./img/fruit2.png" alt="">
+            <img src="./img/fruit3.png" alt="">
+            <img src="./img/fruit4.png" alt="">
+          </div> 
+         <div class="deal-of-section flex justify-between flex-col md:flex-row lg:flex-row p-4">
+            <div class="deal-left  text-center md:text-left lg:text-left">
+                <h2 class="text-xl mb-4 font-bold">Deal of the day</h2>
+                <p class="text-sm text-slate-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="deal-right flex text-center mt-5 md:mt-0 lg:mt-0">
+               <div class="mr-2"> <h1 class="font-extrabold text-xl">29</h1>
+                <p class="mr-2">Days</p>
+            </div>
+               <div class="mr-2"> <h1 class="font-extrabold text-xl">15</h1>
+                <p class="mr-2">Hours</p>
+            </div>
+                <div class="mr-2">
+                    <h1 class="font-extrabold text-xl">25</h1>
+                <p class="mr-2">Minutes</p>
+                </div>
+               <div class="mr-2">
+                <h1 class="font-extrabold text-xl">30</h1>
+                <p class="mr-2">Seconds</p>
+               </div>
+            </div>
+          </div>
+          <!-- cards -->
+         <div class="deal-cards grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-10 mt-8">
+            <div class="card  bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./img/fruit1.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p>Apples</p>
+                  <div class="card-actions">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                  </div>
+                  <p class="text-orange-500">Details</p>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./img/fruit2.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">1.90$ - 18.85$</h2>
+                  <p>Orange</p>
+                  <div class="card-actions">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                  </div>
+                  <p class="text-orange-500">Details</p>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./img/fruit3.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">14.90$ - 18.85$</h2>
+                  <p>Red Dragon</p>
+                  <div class="card-actions">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                  </div>
+                  <p class="text-orange-500">Details</p>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./img/fruit4.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">15.90$ - 18.85$</h2>
+                  <p>Banana</p>
+                  <div class="card-actions">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                  </div>
+                  <p class="text-orange-500">Details</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="flex justify-center mt-10">
+                <button class="btn bg-[#F85559] text-white border-none outline-none">Shop All</button>
+            </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto p-8 lg:p-14">
+        <div class="meet-section">
+            <div class="hero min-h-screen" style="background-image: url('./img/banner1.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-3xl font-bold">Meet the team section</h1>
+                    <p class="mb-5 text-[#f1eded]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>           
+                   <div class="flex  flex-col md:flex-row lg:flex-row gap-10 justify-around">
+                   <div>
+                    <img class=" m-auto" src="./img/member1.png" alt="">
+                    <p>Nayem Ahmed</p>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>                  
+                   </div>
+                   <div>
+                    <img class=" m-auto" src="./img/member2.png" alt="">
+                    <p>Nayem Ahmed</p>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>                  
+                   </div>
+                   <div>
+                    <img class="m-auto" src="./img/member3.png" alt="">
+                    <p>Nayem Ahmed</p>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>                   
+                   </div>
+                   <div>
+                    <img class=" m-auto" src="./img/member4.png" alt="">
+                    <p>Nayem Ahmed</p>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
+                    <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>             
+                   </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-black text-primary-content">
+        <div>
+         <div class="flex gap-3 items-center mb-5">
+            <img src="./img/logo.png" alt="">
+            <h2 class="text-2xl">Fruit Burst</h2>
+         </div>
+         <ul class="flex">
+            <li class="mr-5">Home</li>
+            <li class="mr-5">About Us</li>
+            <li class="mr-5">Blog</li>
+            <li class="mr-5">Services</li>
+         </ul>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-4">
+            <span class="text-xl"><i class="fa-brands fa-instagram"></i></span>
+            <span class="text-xl"><i class="fa-brands fa-twitter"></i></span>
+            <span class="text-xl"><i class="fa-brands fa-facebook"></i></span>
+            <span class="text-xl"><i class="fa-brands fa-youtube"></i></span>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
