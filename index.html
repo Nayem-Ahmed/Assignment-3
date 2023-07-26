@@ -53,12 +53,13 @@
               </ul>
             </div>
             <div class="navbar-end ">
-                <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full"/>
+                <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full relative"/>
+                <span class="absolute mr-10 text-[#121212]"><i class="fa-solid fa-magnifying-glass"></i></span>
             </div>
           </div>
           <!-- Banner section -->
-         <div class="hero min-h-screen mt-12" style="background-image: url('img/banner1.png');">
-            <div class="hero-overlay bg-opacity-60"></div>
+         <div class="hero min-h-screen mt-12 rounded-lg" style="background-image: url('img/banner1.png');">
+            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
                 <h1 class="mb-5 text-4xl font-bold">Exotic tastes at your doorstep</h1>
@@ -74,6 +75,7 @@
             <img src="./img/fruit3.png" alt="">
             <img src="./img/fruit4.png" alt="">
           </div> 
+          <!-- Deal section -->
          <div class="deal-of-section flex justify-between flex-col md:flex-row lg:flex-row p-4">
             <div class="deal-left  text-center md:text-left lg:text-left">
                 <h2 class="text-xl mb-4 font-bold">Deal of the day</h2>
@@ -100,7 +102,7 @@
          <div class="deal-cards grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-10 mt-8">
             <div class="card  bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./img/fruit1.png" alt="Shoes" class="rounded-xl" />
+                  <img src="./img/fruit6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -180,39 +182,43 @@
                 <button class="btn bg-[#F85559] text-white border-none outline-none">Shop All</button>
             </div>
     </header>
-    <main class="max-w-screen-xl mx-auto p-8 lg:p-14">
-        <div class="meet-section">
-            <div class="hero min-h-screen" style="background-image: url('./img/banner1.png');">
-                <div class="hero-overlay bg-opacity-60"></div>
+    <main class="max-w-screen-xl mx-auto p-8 lg:p-14 rounded-lg">
+        <div class="meet-section rounded-lg">
+            <div class="hero min-h-screen rounded-lg text-[#FFF]" style="background-image: url('./img/banner1.png');">
+                <div class="hero-overlay bg-opacity-70 rounded-lg"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
                     <h1 class="mb-5 text-3xl font-bold">Meet the team section</h1>
                     <p class="mb-5 text-[#f1eded]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>           
-                   <div class="flex  flex-col md:flex-row lg:flex-row gap-10 justify-around">
+                   <div class="flex flex-col md:flex-row lg:flex-row gap-10 justify-around">
                    <div>
                     <img class=" m-auto" src="./img/member1.png" alt="">
-                    <p>Nayem Ahmed</p>
+                    <p class="mt-2">Nayem</p>
+                    <p class="text-[9px] mb-1">Fruits Expert</p>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>                  
                    </div>
                    <div>
                     <img class=" m-auto" src="./img/member2.png" alt="">
-                    <p>Nayem Ahmed</p>
+                    <p class="mt-2">Nazma</p>
+                    <p class="text-[9px] mb-1">Fruits Expert</p>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>                  
                    </div>
                    <div>
                     <img class="m-auto" src="./img/member3.png" alt="">
-                    <p>Nayem Ahmed</p>
+                    <p class="mt-2">Nadim</p>
+                    <p class="text-[9px] mb-1">Fruits Expert</p>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>                   
                    </div>
                    <div>
                     <img class=" m-auto" src="./img/member4.png" alt="">
-                    <p>Nayem Ahmed</p>
+                    <p class="mt-2">Mrittika</p>
+                    <p class="text-[9px] mb-1">Fruits Expert</p>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-facebook-f w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-twitter w-[20px]"></i></span>
                     <span class="bg-[#F85559] rounded-full"><i class="fa-brands fa-linkedin-in w-[20px]"></i></span>             
@@ -232,7 +238,7 @@
          </div>
          <ul class="flex">
             <li class="mr-5">Home</li>
-            <li class="mr-5">About Us</li>
+            <li class="mr-5">About</li>
             <li class="mr-5">Blog</li>
             <li class="mr-5">Services</li>
          </ul>
